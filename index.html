@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1/">
+    <title>Temp Calculator 🥵🥶</title>
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+      <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="intro">
+                    <h1 class="py-5" style="font-weight: bold; color: #ffe6ff;">Temperature Converter</h1>
+                    <br>
+                    <main class="w-100 m-auto glass">
+                        <form onsubmit="return false">
+                          <h1 class="h3 mb-3 fw-normal">🥵 or 🥶?</h1>
+
+                          <p style="font-weight: bold;">Input in:</p>
+                          <input class="tgl tgl-skewed" id="cb3" type="checkbox" value="no" onclick="clear()"/>
+                          <label class="tgl-btn" data-tg-off="Celsius" data-tg-on="Fahrenheit" for="cb3"></label>
+                          
+                          <br>
+
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="tempinput" placeholder="in F" value required>
+                            <label for="floatingInput">Enter Temperature</label>
+                          </div>
+                          <br>
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="tempresult" value readonly>
+                            <label for="floatingPassword">The Result</label>
+                          </div>
+                          <br>
+                          <button class="btn btn-primary w-100 py-2" type="submit" onclick = "solve()">Convert!</button>
+                          <p class="mt-5 mb-3">Made with ❤ by Jayanth Kumar.</p>
+                        </form>
+                      </main>
+
+              </div>
+      </section>
+      <script src="/calculate.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>
