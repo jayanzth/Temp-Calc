@@ -15,8 +15,3 @@ function solve()
     document.getElementById("tempresult").value = Math.round(res_f)+"°F";
     }
 }
-
-function clear()
-{
-    document.getElementById("tempinput").value = "";
-}
